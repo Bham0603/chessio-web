@@ -3,6 +3,7 @@
 import { useEffect, useCallback } from 'react';
 import OceanCanvas from './components/OceanCanvas';
 import ProductShowcase from './components/ProductShowcase';
+import ManualInstallGuide from './components/ManualInstallGuide';
 
 export default function Home() {
   // --- Scroll Reveal ---
@@ -426,6 +427,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ===== MANUAL INSTALL GUIDE ===== */}
+      <ManualInstallGuide />
 
       {/* ===== MORE FEATURES ===== */}
       <section className="more-features" id="more-features">

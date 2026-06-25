@@ -1162,3 +1162,175 @@ body {
     align-items: center;
   }
 }
+
+/* ========================================
+   MANUAL INSTALL GUIDE
+   ======================================== */
+.install-guide {
+  position: relative;
+  z-index: 1;
+  padding: var(--section-pad) 0;
+}
+
+.install-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .install-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.install-steps {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.install-step-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: var(--text-secondary);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.install-step-btn:hover {
+  color: var(--text-primary);
+}
+
+.install-step-btn.active {
+  color: var(--text-primary);
+}
+
+.step-number {
+  font-family: var(--font-main);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.step-text {
+  font-size: 16px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.step-indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(192, 207, 178, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.step-indicator::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #c0cfb2;
+}
+
+.code-capsule {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: #c0cfb2;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.install-media-box {
+  background: rgba(9, 9, 11, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.media-container {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  position: relative;
+}
+
+.media-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-footer {
+  padding: 10px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--text-secondary);
+  animation: blink-dot 1.5s infinite;
+}
+
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.install-cta-container {
+  text-align: center;
+}
+
+.install-cta-btn {
+  background: #c0cfb2;
+  color: #000;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.install-cta-btn:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(192, 207, 178, 0.3);
+}
+
+.install-meta {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
