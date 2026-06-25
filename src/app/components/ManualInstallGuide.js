@@ -64,6 +64,7 @@ export default function ManualInstallGuide() {
                 key={step.id}
                 className={`install-step-btn ${index === activeStep ? 'active' : ''}`}
                 onClick={() => setActiveStep(index)}
+                onMouseEnter={() => setActiveStep(index)}
               >
                 <span className="step-number">{step.id}</span>
                 <span className="step-text">{step.text}</span>
