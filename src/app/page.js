@@ -133,7 +133,7 @@ export default function Home() {
             <a href="#features" className="nav-link">Features</a>
             <a href="#showcase" className="nav-link">Preview</a>
             <a href="#how-it-works" className="nav-link">How It Works</a>
-            <a href="#download" className="nav-cta">
+            <a href="https://github.com/Bham0603/chessio/releases/tag/v1.0" target="_blank" rel="noopener noreferrer" className="nav-cta">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
@@ -153,7 +153,7 @@ export default function Home() {
         <a href="#features" className="mobile-link">Features</a>
         <a href="#showcase" className="mobile-link">Preview</a>
         <a href="#how-it-works" className="mobile-link">How It Works</a>
-        <a href="#download" className="mobile-link cta">Download</a>
+        <a href="https://github.com/Bham0603/chessio/releases/tag/v1.0" target="_blank" rel="noopener noreferrer" className="mobile-link cta">Download</a>
       </div>
 
       {/* ===== HERO SECTION ===== */}
@@ -172,7 +172,7 @@ export default function Home() {
             no servers, no latency, full privacy.
           </p>
           <div className="hero-actions reveal">
-            <a href="#download" className="btn btn-primary btn-glow">
+            <a href="https://github.com/Bham0603/chessio/releases/tag/v1.0" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-glow">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
@@ -510,7 +510,7 @@ export default function Home() {
               <h2 className="cta-title">Ready to Elevate<br />Your Chess Game?</h2>
               <p className="cta-subtitle">Download Chessio and get instant Stockfish analysis on every move. Free, offline, and privacy-first.</p>
               <div className="cta-actions">
-                <a href="#download" className="btn btn-primary btn-glow btn-large">
+                <a href="https://github.com/Bham0603/chessio/releases/tag/v1.0" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-glow btn-large">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                     <polyline points="7 10 12 15 17 10" />

@@ -93,7 +93,7 @@ export default function ManualInstallGuide() {
 
         {/* Global CTA */}
         <div className="install-cta-container reveal">
-          <a href="https://github.com/USER/REPO/releases/latest/download/chessio-extension.zip" className="btn install-cta-btn">
+          <a href="https://github.com/Bham0603/chessio/releases/tag/v1.0" target="_blank" rel="noopener noreferrer" className="btn install-cta-btn">
             Download Extension (.zip)
           </a>
           <p className="install-meta">Works on Chrome · Manifest V3 · No account needed</p>
